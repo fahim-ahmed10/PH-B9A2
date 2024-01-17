@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Mulish', sans-serif; */
+}
+
+body {
+    width: 1440px;
+    height: 6940px;
+    margin: 0 auto;
+}
+
+:root {
+    --primary-font: 'Mulish', sans-serif;
+    --nav-color-1: #FF5400;
+    --nav-color-2: #424247;
+}
+
+header>nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 52px 0;
+}
+
+header>nav .header_brand_name {
+    display: flex;
+    gap: 20px;
+}
+
+header>nav .header_brand_name img {
+    width: 48px;
+    height: 56.008px;
+    flex-shrink: 0;
+}
+
+header>nav .header_brand_name h1 {
+    color: var(--nav-color-1);
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+header>nav .header_brand_name h1 span {
+    color: #131318;
+}
+
+header>nav .nav_menu ul{
+    display: flex;
+    gap: 44px;
+    list-style: none;
+    padding: 11px;
+}
+
+header>nav .nav_menu ul li a{
+    color: var(--nav-color-2);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+header>nav .nav_menu ul li a span{
+    color: var(--nav-color-1);
+}
