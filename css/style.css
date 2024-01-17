@@ -4,7 +4,8 @@
     box-sizing: border-box;
     /* font-family: 'Mulish', sans-serif; */
 }
-body{
+
+body {
     margin: 0 20px;
 }
 
@@ -74,6 +75,7 @@ header>nav .nav_menu ul li a span {
 header>nav .menu_bars {
     display: none;
 }
+
 /*Header end*/
 
 
@@ -106,6 +108,7 @@ header>nav .menu_bars {
     }
 
 }
+
 /*Expore Travel navbar 600px-992px responsive end */
 
 
@@ -136,6 +139,7 @@ header>nav .menu_bars {
         padding: 5px;
     }
 }
+
 /*Expore Travel navbar 600px responsive end */
 
 /* main section start */
@@ -228,46 +232,54 @@ main .hero_item .explore_content .explore_filter button:hover {
 main .hero_item .explore_content .explore_filter button i {
     padding-right: 5px;
 }
+
 /*Expore Travel first section end */
 
 /*Expore Travel first section responsive start */
-@media screen and (min-width: 601px) and (max-width: 992px){
-    main .hero_item .explore_content{
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    main .hero_item .explore_content {
         margin: 40px 40px;
         background-position: 50%;
     }
+
     main .hero_item .explore_content h1 {
         font-size: 40px;
     }
+
     main .hero_item .explore_content p {
         font-size: 18px;
         padding: 0 25px;
     }
+
     main .hero_item .explore_content .explore_filter {
         flex-direction: column;
         gap: 20px;
     }
+
     main .hero_item .explore_content .explore_filter input,
     select {
         width: 305px;
-        height: 52px;  
+        height: 52px;
 
     }
-    main .hero_item .explore_content .explore_filter button{
+
+    main .hero_item .explore_content .explore_filter button {
         width: 180px;
         height: 52px;
         margin: 0 auto;
         font-size: 14px;
     }
 }
+
 /*Expore Travel first section 601-992 px responsive end */
 
 /*Expore Travel first section responsive start */
 @media screen and (max-width: 600px) {
-    main .hero_item .explore_content{
+    main .hero_item .explore_content {
         margin: 20px 20px;
         background-position: 50%;
     }
+
     main .hero_item .explore_content h1 {
         font-size: 22px;
     }
@@ -286,14 +298,185 @@ main .hero_item .explore_content .explore_filter button i {
     main .hero_item .explore_content .explore_filter input,
     select {
         width: 255px;
-        height: 52px;    
+        height: 52px;
 
     }
-    main .hero_item .explore_content .explore_filter button{
+
+    main .hero_item .explore_content .explore_filter button {
         width: 255px;
         height: 52px;
         margin: 0 auto;
     }
 
 }
+
 /*Expore Travel first section 600px responsive end */
+
+/*Popular section start*/
+main>#popular_tour_section {
+    max-width: 1170px;
+    margin: 80px auto;
+}
+
+main>#popular_tour_section>.popular_content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 53px;
+}
+
+main>#popular_tour_section>.popular_content .popular_tour {
+    width: 577px;
+}
+
+main>#popular_tour_section>.popular_content .popular_tour h1 {
+    color: #131318;
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 35px;
+}
+
+main>#popular_tour_section>.popular_content .popular_tour p {
+    color: #5A5A5D;
+    width: 577px;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 35px;
+    text-align: justify;
+}
+
+main>#popular_tour_section>.popular_content .popular_tour ul {
+    width: 525px;
+    margin-left: 25px;
+}
+
+main>#popular_tour_section>.popular_content .popular_tour ul li {
+    color: rgba(19, 19, 24, 0.70);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+main>#popular_tour_section>.popular_content .popular_tour button {
+    width: 174px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border: none;
+    outline: none;
+    margin-top: 12px;
+}
+
+main>#popular_tour_section>.popular_content .popular_tour button:hover {
+    background: #ff712a;
+    color: #111111;
+}
+
+main>#popular_tour_section>.popular_content .popular_image img {
+    border-radius: 16px;
+    width: 540px;
+    height: 550px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+/*Popular section end*/
+
+/*Expore Travel popular sectionresponsive start */
+@media screen and (min-width: 601px) and (max-width: 992px) {
+    main>#popular_tour_section {
+        margin-left: 40px;
+        margin-right: 40px;
+        max-width: 580px;
+    }
+
+    main>#popular_tour_section>.popular_content {
+        flex-direction: column;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour {
+        margin: 0px auto;
+        width: 100%;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour h1 {
+        font-size: 50px;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour p {
+        font-size: 21px;
+        width: 100%;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour ul {
+        width: 90%;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour ul li a {
+        font-size: 29px;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_image img {
+        width: 100%;
+        height: 500px;
+    }
+
+}
+
+/*Expore Travel popular section  601-992px responsive end */
+
+
+/*Expore Travel popular section responsive start */
+@media screen and (max-width: 600px) {
+    main>#popular_tour_section>.popular_content {
+        max-width: 450px;
+        margin: 0 20px;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour {
+        width: 100%;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour h1 {
+        font-size: 20px;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour p {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour ul {
+        width: 90%;
+    }
+
+    main>#popular_tour_section>.popular_content .popular_tour ul li a {
+        font-size: 14px;
+    }
+    main>#popular_tour_section>.popular_content .popular_image{
+        width: 100%;
+        height: 302px;
+    }
+    main>#popular_tour_section>.popular_content .popular_image img {
+        width: 100%;
+        height: 302px;
+
+    }
+}
+/*Expore Travel popular section 600px responsive end */
