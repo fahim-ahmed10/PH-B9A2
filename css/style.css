@@ -233,7 +233,6 @@ main .hero_item .explore_content .explore_filter button i {
     padding-right: 5px;
 }
 
-/*Expore Travel first section end */
 
 /*Expore Travel first section responsive start */
 @media screen and (min-width: 601px) and (max-width: 992px) {
@@ -311,6 +310,10 @@ main .hero_item .explore_content .explore_filter button i {
 }
 
 /*Expore Travel first section 600px responsive end */
+
+/*Expore Travel first section end */
+
+
 
 /*Popular section start*/
 main>#popular_tour_section {
@@ -396,18 +399,21 @@ main>#popular_tour_section>.popular_content .popular_image img {
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
 
-/*Popular section end*/
 
 /*Expore Travel popular sectionresponsive start */
 @media screen and (min-width: 601px) and (max-width: 992px) {
     main>#popular_tour_section {
         margin-left: 40px;
         margin-right: 40px;
-        max-width: 580px;
+        max-width: 100%;        
     }
 
     main>#popular_tour_section>.popular_content {
+        width: 100%;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
     }
 
     main>#popular_tour_section>.popular_content .popular_tour {
@@ -469,14 +475,252 @@ main>#popular_tour_section>.popular_content .popular_image img {
     main>#popular_tour_section>.popular_content .popular_tour ul li a {
         font-size: 14px;
     }
-    main>#popular_tour_section>.popular_content .popular_image{
+
+    main>#popular_tour_section>.popular_content .popular_image {
         width: 100%;
         height: 302px;
     }
+
     main>#popular_tour_section>.popular_content .popular_image img {
         width: 100%;
         height: 302px;
 
     }
 }
+
 /*Expore Travel popular section 600px responsive end */
+
+/*Popular section end*/
+
+
+/*Choose Destination section start*/
+main>#destination {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+main>#destination>.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+main>#destination>.heading h1 {
+    color: #131318;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+main>#destination>.heading p {
+    width: 643px;
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+main>#destination .destination_images {
+    width: 100%;
+    margin-top: 48px;
+}
+
+
+main>#destination .destination_images .row_1,
+.row_3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+main>#destination .destination_images .row_1 .first_image img,
+.last_image img {
+    width: 573px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+main>#destination .destination_images .row_2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+main>#destination .destination_images .row_2 .first_image img {
+    width: 374px;
+    height: 286px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+main>#destination .destination_images .row_2 .middle_image img {
+    width: 474px;
+    height: 286px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+main>#destination .destination_images .row_2 .last_image img {
+    width: 274px;
+    height: 286px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+main>#destination .destination_images .row_3 .first_image img {
+    width: 473px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+main>#destination .destination_images .row_3 .last_image img {
+    width: 673px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+
+main>#destination .destination_images .row {
+    position: relative;
+}
+
+main>#destination .destination_images .row h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #FFF;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/*Choose destination section responsive start */
+@media screen and (max-width: 1220px) {
+    main>#destination {
+        margin: 0 40px;
+    }
+
+    main>#destination>.heading p {
+        width: auto;
+    }
+
+    main>#destination .destination_images .row_1,
+    .row_3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main>#destination .destination_images .row_1 .first_image img,
+    .last_image img {
+        width: 100%;
+    }
+
+    main>#destination .destination_images .row_2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    main>#destination .destination_images .row_2 .first_image img {
+        width: 100%;
+    }
+
+    main>#destination .destination_images .row_2 .middle_image img {
+        width: 100%;
+    }
+
+    main>#destination .destination_images .row_2 .last_image img {
+        width: 100%;
+
+    }
+
+    main>#destination .destination_images .row_3 .first_image img {
+        width: 100%;
+    }
+
+    main>#destination .destination_images .row_3 .last_image img {
+        width: 100%;
+    }
+
+}
+
+/*Choose destination section 1220px responsive end */
+
+/*Choose destination section responsive start */
+@media screen and (max-width: 600px) {
+    main>#destination {
+        margin: 0 20px;
+    }
+
+    main>#destination>.heading h1 {
+        font-size: 20px;
+    }
+
+    main>#destination>.heading p {
+        font-size: 14px;
+    }
+
+    main>#destination .destination_images .row_1 .first_image img,
+    .last_image img {
+        width: 335px;
+        height: 176px;
+    }
+
+    main>#destination .destination_images .row_2 .first_image img {
+        width: 335px;
+        height: 176px;
+    }
+
+    main>#destination .destination_images .row_2 .middle_image img {
+        width: 335px;
+        height: 176px;
+    }
+
+    main>#destination .destination_images .row_2 .last_image img {
+        width: 335px;
+        height: 176px;
+
+    }
+
+    main>#destination .destination_images .row_3 .first_image img {
+        width: 335px;
+        height: 176px;
+    }
+
+    main>#destination .destination_images .row_3 .last_image img {
+        width: 335px;
+        height: 176px;
+    }
+    main>#destination .destination_images .row h1{
+        font-size: 20px;
+    }
+}
+
+
+/*Choose destination section 600px responsive end */
+
+/*Choose Destination section end*/
