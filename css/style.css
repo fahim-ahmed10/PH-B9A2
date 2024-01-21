@@ -1313,6 +1313,7 @@ main>#perfect_place .perfect_place_content .description button {
 main>#perfect_place .perfect_place_content .description button:hover {
     background: #fa732f;
     color: #111111;
+    cursor: pointer;
 }
 
 main>#perfect_place .perfect_place_content .video_content {
@@ -1362,9 +1363,13 @@ main>#perfect_place .perfect_place_content .video_content video {
     main>#perfect_place .perfect_place_content .description ul {
         width: auto;
     }
+
+    main>#perfect_place .perfect_place_content .video_content video {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     main>#perfect_place .perfect_place_content {
         flex-direction: column;
         margin: 0 20px;
@@ -1393,7 +1398,249 @@ main>#perfect_place .perfect_place_content .video_content video {
 
 /*Perfect place and Video section end*/
 
-@media screen and (max-width: 1220px) {}
+
+
+
+/*Newsletter section start*/
+main>#newsletter {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+main>#newsletter .newsletter_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 100px 40px;
+}
+
+main>#newsletter .newsletter_content .subcription {
+    width: 474px;
+    height: 422px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+}
+
+main>#newsletter .newsletter_content .subcription h1 {
+    color: #131318;
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 16px;
+
+}
+
+main>#newsletter .newsletter_content .subcription p {
+    width: 350px;
+    color: #5A5A5D;
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 24px;
+    /* 162.5% */
+}
+
+main>#newsletter .newsletter_content .subcription hr {
+    width: 393px;
+    height: 1px;
+    background: rgba(19, 19, 24, 0.10);
+    margin-bottom: 24px;
+}
+
+main>#newsletter .newsletter_content .subcription input {
+    width: 393px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    outline: none;
+    margin-bottom: 16px;
+}
+
+main>#newsletter .newsletter_content .subcription button {
+    width: 393px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border: none;
+    outline: none;
+}
+
+main>#newsletter .newsletter_content .subcription button:hover {
+    background: #ff7733;
+    color: #000000;
+    cursor: pointer;
+}
+
+main>#newsletter .newsletter_content .image {
+    display: flex;
+    width: 672px;
+    height: 422px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    position: relative;
+}
+
+main>#newsletter .newsletter_content .image img {
+    width: 100%;
+
+}
+
+main>#newsletter .newsletter_content .image .top {
+    position: absolute;
+    bottom: 18%;
+    right: 2%;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg) translate(-2%, 0);
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FF5400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main>#newsletter .newsletter_content .image .top span {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+main>#newsletter .newsletter_content .image .top p {
+    color: #FFF;
+    font-family: var(--primary-font);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+
+/*Newsletter section responsive start*/
+
+@media screen and (max-width:1220px) {
+    main>#newsletter .newsletter_content {
+        flex-direction: column;
+    }
+
+    main>#newsletter .newsletter_content .image {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    main>#newsletter .newsletter_content .image img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    main>#newsletter .newsletter_content {
+        margin: 80px 20px;
+    }
+
+    main>#newsletter .newsletter_content .subcription {
+        width: 335px;
+        height: 353px;
+        flex-shrink: 0;
+        padding: 20px;
+    }
+
+    main>#newsletter .newsletter_content .subcription h1 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    main>#newsletter .newsletter_content .subcription p {
+        width: 270px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    main>#newsletter .newsletter_content .subcription hr {
+        width: 288px;
+        margin-bottom: 10px;
+    }
+
+    main>#newsletter .newsletter_content .subcription input {
+        width: 288px;
+        height: 52px;
+        flex-shrink: 0;
+    }
+
+    main>#newsletter .newsletter_content .subcription button {
+        width: 288px;
+        height: 52px;
+        flex-shrink: 0;
+    }
+
+    main>#newsletter .newsletter_content .image {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    main>#newsletter .newsletter_content .image img {
+        width: 100%;
+    }
+
+    main>#newsletter .newsletter_content .image .top {
+        width: 214.023px;
+        height: 79.268px;
+    }
+
+    main>#newsletter .newsletter_content .image .top span {
+        font-size: 15.854px;
+    }
+
+    main>#newsletter .newsletter_content .image .top p {
+        font-size: 21.138px;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    main>#newsletter .newsletter_content .image .top {
+        bottom: 30%;
+    }
+}
+
+/*Newsletter section responsive end*/
+
+
+
+/*Newsletter section end*/
+
+
+
+
+
+
+
+
+
 
 /*Footer start*/
 footer {
